@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='Flask-Staticify',
-    version='0.1.0',
+    version='0.1.1',
     url='https://github.com/mstolyarchuk/flask-staticify',
     license='BSD',
     author='Maxim Stolyarchuk',
