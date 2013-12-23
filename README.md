@@ -31,4 +31,4 @@ After running compile command: `static/app.coffee -> .tmp/app.js`. To use compil
 And that's it! 
 
 ## Install
-    $ pip install flask-staticify
+    $ pip install Flask-Staticify
