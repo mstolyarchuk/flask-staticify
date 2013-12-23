@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import os
+from warnings import warn
 
 from flask import current_app, send_from_directory
 from werkzeug.exceptions import NotFound
@@ -20,4 +21,7 @@ def _fallback_to(folder):
     return send_static
 
 def mount_folder(app, folder):
+    if app.view_functions['static'] != app.send_static_file:
+        warn("The endpoint function was already redefined in your application. "
+             "That changes will not show up.")
     app.view_functions['static'] = _fallback_to(folder)
