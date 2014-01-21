@@ -2,7 +2,8 @@ Flask-Staticify
 ===============
 
 A simple extension that makes it possible to define the additional static locations
-your Flask application will traverse as a fallback.
+your Flask application will traverse as a fallback. Miss Django's ``STATICFILES_DIRS`` setting? 
+This mimics that functionallty.
 
 Only works when ``app.debug`` is set to ``True``.
 
