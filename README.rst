@@ -35,12 +35,12 @@ Let's have an example from the scratch:
 API
 ---
 
-mount_folders(*app*, *folders*)
+mount_folders(*app*, *locations*)
 ```````````````````````````````
 A single top-level function where the all magic comes from.
 
-folders
-  an iterable of strings with the additional static locations. It also accepts a tuple of the form ``(prefix, folder)`` 
+locations
+  an iterable of strings with the additional static locations. It also accepts a 2-tuple of the form ``(prefix, folder)`` 
   and using a *prefix* is a way to connect specific urls with a *folder* directly.
   
 
