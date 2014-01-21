@@ -36,7 +36,7 @@ API
 ---
 
 mount_folders(*app*, *locations*)
-```````````````````````````````
+`````````````````````````````````
 A single top-level function where the all magic comes from.
 
 locations
