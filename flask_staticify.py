@@ -15,7 +15,8 @@ def _normalize(locations):
             prefix, folder = location
         else:
             prefix, folder = '', location
-        rv.append((prefix, folder))
+        if (prefix, folder) not in rv:
+            rv.append((prefix, folder))
     return rv
 
 def _fallback_to(locations):
