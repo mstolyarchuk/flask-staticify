@@ -40,7 +40,7 @@ def _fallback_to(locations):
 
 def mount_folders(app, locations):
     """Sets up the additional static locations that the application will traverse.
-    This function does nothing in debug mode.
+    This function does nothing in non-debug mode.
     """
     if app.debug:
         if app.view_functions['static'] != app.send_static_file:
